@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-index.html</title>
+</head>
+<body>
+    <h1>Login to the website</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div id="loginForm">
+              <h2>Login Form</h2>
+              <form>
+                <div class="form-group">
+                  <label for="firstname">First name</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="First name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="setCookies()">Log me in</button>
+                <button type="button" class="btn btn-secondary" onclick="showCookies()">Show the cookies</button>
+              </form>
+            </div>
+            <div id="welcomeMessage"></div>
+
+  <div id="cookieInfo"></div>
+          </div>
+        </div>
+      </div>
+      <script src="src/index.js"></script>
+</body>
+</html>
