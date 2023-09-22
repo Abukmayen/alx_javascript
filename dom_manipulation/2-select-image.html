@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying Element</title>
+    <style>
+      img {
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        // select the <img> element
+        var myImage = document.getElementById("myImage");
+
+        //Modify the src, and header
+        myImage.src = "https://soeonline.american.edu/wp-content/uploads/sites/2/2022/08/blog-makers-960x640-1-768x512.jpg";
+        myImage.alt = "New image";
+        myImage.style.border = "2px solid red";
+      };
+    </script>
+  </head>
+  <body>
+    <img id="myImage" src="https://soeonline.american.edu/wp-content/uploads/sites/2/2022/08/blog-makers-960x640-1-768x512.jpg"alt="My Image." />
+  </body>
+</html>
